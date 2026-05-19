@@ -15,7 +15,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <ImageWithFallback
           src="https://images.unsplash.com/photo-1768839725085-829e6ac7ac26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
-          alt="Chantier de plâtrerie"
+          alt="Chantier de plâtrerie et isolation par GCB, artisan à Annonay en Ardèche"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />

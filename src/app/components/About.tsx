@@ -72,7 +72,7 @@ export function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1685022515887-c2a10c137162?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
-                alt="Artisan au travail"
+                alt="Artisan GCB réalisant des travaux de plâtrerie et isolation en Auvergne-Rhône-Alpes"
                 className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 to-transparent" />
