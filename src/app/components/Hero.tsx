@@ -72,11 +72,11 @@ export function Hero() {
             </button>
 
             <a
-              href="tel:+33123456789"
+              href="tel:+33475321867"
               className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center"
               style={{ fontFamily: 'var(--font-body)' }}
             >
-              <span className="font-semibold">04 XX XX XX XX</span>
+              <span className="font-semibold">04 75 32 18 67</span>
             </a>
           </motion.div>
         </div>

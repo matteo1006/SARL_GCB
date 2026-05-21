@@ -64,7 +64,7 @@ export function Zone() {
             </div>
 
             <a
-              href="tel:+33123456789"
+              href="tel:+33475321867"
               className="inline-flex items-center gap-3 px-8 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-all duration-300 hover:scale-105"
               style={{ fontFamily: 'var(--font-body)' }}
             >

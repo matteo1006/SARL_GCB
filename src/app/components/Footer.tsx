@@ -86,11 +86,11 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#6366f1] flex-shrink-0 mt-0.5" />
                 <a
-                  href="tel:+33123456789"
+                  href="tel:+33475321867"
                   className="text-white/60 hover:text-white transition-colors"
                   style={{ fontFamily: 'var(--font-body)' }}
                 >
-                  04 XX XX XX XX
+                  04 75 32 18 67
                 </a>
               </li>
               <li className="flex items-start gap-3">
