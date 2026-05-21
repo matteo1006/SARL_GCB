@@ -174,11 +174,11 @@ export function Contact() {
                       Téléphone
                     </div>
                     <a
-                      href="tel:+33123456789"
+                      href="tel:+33475321867"
                       className="text-white hover:text-[#6366f1] transition-colors"
                       style={{ fontFamily: 'var(--font-body)' }}
                     >
-                      04 XX XX XX XX
+                      04 75 32 18 67
                     </a>
                   </div>
                 </div>
