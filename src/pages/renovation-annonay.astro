@@ -1,0 +1,154 @@
+---
+import '@/styles/index.css'
+import { Navbar } from '@/app/components/Navbar'
+import { Footer } from '@/app/components/Footer'
+
+const services = [
+  { title: 'Rénovation Complète', desc: 'Prise en charge intégrale du second œuvre : démolition des cloisons existantes, redistribution des espaces, nouveau placo, isolation, menuiseries.' },
+  { title: 'Réhabilitation de Bâtiment', desc: 'Rénovation de maisons anciennes, gîtes, locaux professionnels. Mise aux normes et amélioration énergétique incluses.' },
+  { title: 'Extension & Surélévation', desc: 'Agrandissement de votre logement par extension ou surélévation. Plâtrerie, isolation et menuiseries de la nouvelle surface.' },
+  { title: 'Redistribution des Espaces', desc: 'Création ou suppression de cloisons pour optimiser votre plan. Ouverture sur salon, création de suite parentale, bureau à domicile.' },
+  { title: 'Rénovation Énergétique', desc: 'Programme complet isolation + menuiseries pour améliorer votre DPE. Accompagnement pour les aides MaPrimeRénov\' et CEE.' },
+  { title: 'Neuf & Promotion', desc: 'Intervention sur construction neuve pour promoteurs et particuliers : pose placo, isolation, menuiseries, finitions avant livraison.' },
+]
+
+const faq = [
+  { q: 'Combien coûte une rénovation complète à Annonay ?', a: 'Le coût dépend de la surface, de l\'état du logement et des prestations choisies. Pour une rénovation de second œuvre complète, comptez entre 200 € et 600 € par m². GCB réalise une visite et un devis gratuits et détaillés.' },
+  { q: 'GCB gère-t-il l\'ensemble des travaux ou uniquement certains corps de métier ?', a: 'GCB se spécialise dans le second œuvre : plâtrerie, isolation et menuiserie. Pour les travaux d\'électricité, plomberie et carrelage, nous pouvons vous recommander des artisans partenaires locaux pour une coordination fluide.' },
+  { q: 'Peut-on rénover un logement occupé ?', a: 'Oui. GCB organise les travaux par phases pour minimiser les nuisances et vous permettre de rester dans votre logement. Chaque espace est protégé et nettoyé en fin de journée.' },
+  { q: 'Quelle garantie sur les travaux de rénovation ?', a: 'Tous les travaux réalisés par GCB sont couverts par la garantie décennale (10 ans) et la garantie biennale (2 ans) pour les équipements. Nos devis précisent les garanties applicables à chaque prestation.' },
+  { q: 'Intervenez-vous pour les professionnels et les locaux commerciaux ?', a: 'Absolument. GCB rénove aussi bien des logements particuliers que des locaux professionnels (bureaux, commerces, restaurants, gîtes) à Annonay et dans la région.' },
+]
+
+const cities = ['Annonay (07100)', 'Davézieux', 'Saint-Clair', 'Serrières', 'Boulieu-lès-Annonay', 'Roiffieux', 'Tournon-sur-Rhône', 'Valence (26)', 'Saint-Étienne (42)', 'Vienne (38)', 'Lyon (69)', 'Privas (07)']
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rénovation Maison Annonay (07) – Second Œuvre | GCB</title>
+    <meta name="description" content="Entreprise de rénovation à Annonay, Ardèche. GCB réalise tous vos travaux de second œuvre : plâtrerie, isolation, menuiserie. Particuliers et professionnels. Devis gratuit sous 48h." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sarl-gcb.netlify.app/renovation-annonay" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarl-gcb.netlify.app/renovation-annonay" />
+    <meta property="og:title" content="Rénovation Maison Annonay (07) – Second Œuvre | GCB" />
+    <meta property="og:description" content="Entreprise de rénovation à Annonay. Plâtrerie, isolation, menuiserie. Devis gratuit sous 48h." />
+    <meta property="og:image" content="https://sarl-gcb.netlify.app/og-image.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="GCB Bâtiment" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Rénovation de maison à Annonay",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "GCB",
+        "telephone": "+33674385239",
+        "address": { "@type": "PostalAddress", "addressLocality": "Annonay", "addressRegion": "Ardèche", "postalCode": "07100", "addressCountry": "FR" }
+      },
+      "areaServed": "Annonay, Ardèche, Auvergne-Rhône-Alpes",
+      "description": "Rénovation intérieure complète à Annonay : second œuvre, plâtrerie, isolation thermique, menuiseries."
+    }
+    </script>
+  </head>
+  <body class="bg-[#0a0a0a]">
+    <Navbar client:load />
+    <main>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-28 pb-2">
+        <nav aria-label="breadcrumb" class="text-sm text-white/50" style="font-family: var(--font-body)">
+          <a href="/" class="hover:text-white transition-colors">Accueil</a>
+          <span class="mx-2">/</span>
+          <span class="text-white">Rénovation Annonay</span>
+        </nav>
+      </div>
+
+      <section class="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="inline-block px-4 py-2 bg-[#6366f1]/10 border border-[#6366f1]/20 rounded-full mb-6">
+            <span class="text-[#6366f1] text-sm font-semibold" style="font-family: var(--font-body)">RÉNOVATION – ANNONAY (07)</span>
+          </div>
+          <h1 class="text-5xl md:text-6xl text-white mb-6 leading-tight" style="font-family: var(--font-display)">
+            RÉNOVATION DE MAISON<br />À ANNONAY
+          </h1>
+          <p class="text-xl text-white/70 mb-10 max-w-3xl leading-relaxed" style="font-family: var(--font-body)">
+            Artisan de second œuvre depuis plus de 15 ans à Annonay, <strong class="text-white">GCB</strong> prend en charge votre rénovation intérieure de A à Z : redistribution des espaces, plâtrerie, isolation thermique et menuiseries. Particuliers et professionnels en Ardèche et région Auvergne-Rhône-Alpes.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/#contact" class="px-8 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold flex items-center justify-center" style="font-family: var(--font-body)">
+              Demander un devis gratuit
+            </a>
+            <a href="tel:+33674385239" class="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors flex items-center justify-center" style="font-family: var(--font-body)">
+              06 74 38 52 39
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-4" style="font-family: var(--font-display)">NOS PRESTATIONS EN RÉNOVATION</h2>
+          <p class="text-white/60 mb-14 max-w-2xl" style="font-family: var(--font-body)">De la rénovation légère à la réhabilitation complète, GCB s'adapte à votre projet et votre budget.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map(s => (
+              <div class="p-8 bg-[#1a1a1a] border border-white/5 rounded-2xl hover:border-[#6366f1]/30 transition-colors">
+                <h3 class="text-xl text-white mb-3" style="font-family: var(--font-display)">{s.title}</h3>
+                <p class="text-white/60 leading-relaxed" style="font-family: var(--font-body)">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">ZONE D'INTERVENTION</h2>
+          <p class="text-white/70 mb-10 max-w-3xl text-lg leading-relaxed" style="font-family: var(--font-body)">
+            GCB intervient pour vos travaux de rénovation à <strong class="text-white">Annonay</strong> et dans un rayon de <strong class="text-white">100 km</strong>, couvrant notamment :
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            {cities.map(city => (
+              <div class="px-4 py-3 bg-[#0a0a0a] border border-white/5 rounded-lg text-white/70 text-sm text-center" style="font-family: var(--font-body)">{city}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-14" style="font-family: var(--font-display)">QUESTIONS FRÉQUENTES – RÉNOVATION ANNONAY</h2>
+          <div class="space-y-3 max-w-4xl">
+            {faq.map(f => (
+              <details class="bg-[#1a1a1a] border border-white/5 rounded-xl overflow-hidden">
+                <summary class="px-8 py-5 text-white font-semibold cursor-pointer list-none flex items-center justify-between hover:bg-white/5 transition-colors" style="font-family: var(--font-body)">
+                  {f.q}
+                  <span class="text-[#6366f1] ml-4 text-xl flex-shrink-0">+</span>
+                </summary>
+                <div class="px-8 py-5 text-white/70 leading-relaxed border-t border-white/5" style="font-family: var(--font-body)">{f.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-gradient-to-br from-[#6366f1]/10 to-[#0a0a0a] border-t border-[#6366f1]/20">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">DEVIS RÉNOVATION GRATUIT À ANNONAY</h2>
+          <p class="text-white/60 mb-10 max-w-2xl mx-auto text-lg" style="font-family: var(--font-body)">Réponse sous 48h · Intervention à Annonay et alentours · Sans engagement</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/#contact" class="px-10 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold text-lg" style="font-family: var(--font-body)">Formulaire de contact</a>
+            <a href="tel:+33674385239" class="px-10 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors text-lg" style="font-family: var(--font-body)">06 74 38 52 39</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <Footer client:visible />
+  </body>
+</html>
