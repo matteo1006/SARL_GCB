@@ -27,8 +27,12 @@
     <meta name="twitter:image" content="https://sarl-gcb.netlify.app/og-image.jpg" />
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Preload image hero (LCP) -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1768839725085-829e6ac7ac26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" />
 
     <!-- Données structurées JSON-LD -->
     <script type="application/ld+json">
@@ -36,12 +40,13 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LocalBusiness",
+          "@type": "GeneralContractor",
           "@id": "https://sarl-gcb.netlify.app/#business",
           "name": "GCB",
           "legalName": "SARL GCB",
           "description": "Artisan spécialisé en plâtrerie, isolation thermique RGE et menuiserie depuis plus de 15 ans. Particuliers et professionnels en Auvergne-Rhône-Alpes.",
           "url": "https://sarl-gcb.netlify.app/",
+          "telephone": "+33674385239",
           "email": "contact@gcb-batiment.fr",
           "address": {
             "@type": "PostalAddress",
@@ -102,6 +107,12 @@
   </head>
 
   <body>
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:sans-serif">
+        <h1>GCB – Plâtrerie, Isolation RGE &amp; Menuiserie | Annonay (07)</h1>
+        <p>Artisan certifié RGE à Annonay, Ardèche. Contactez-nous au 06 74 38 52 39 ou par email : contact@gcb-batiment.fr</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

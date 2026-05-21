@@ -58,7 +58,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+33123456789"
+              href="tel:+33674385239"
               className="flex items-center gap-2 px-6 py-3 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-all duration-300 hover:scale-105"
               style={{ fontFamily: 'var(--font-body)' }}
             >
@@ -94,7 +94,7 @@ export function Navbar() {
               </button>
             ))}
             <a
-              href="tel:+33123456789"
+              href="tel:+33674385239"
               className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-[#6366f1] text-white rounded-lg mt-4"
               style={{ fontFamily: 'var(--font-body)' }}
             >
