@@ -1,17 +1,28 @@
-<!DOCTYPE html>
+---
+import '@/styles/index.css'
+import { Navbar } from '@/app/components/Navbar'
+import { Hero } from '@/app/components/Hero'
+import { Services } from '@/app/components/Services'
+import { About } from '@/app/components/About'
+import { Gallery } from '@/app/components/Gallery'
+import { Trust } from '@/app/components/Trust'
+import { Zone } from '@/app/components/Zone'
+import { Contact } from '@/app/components/Contact'
+import { Footer } from '@/app/components/Footer'
+---
+
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO principal -->
-    <title>GCB – Plâtrerie, Isolation RGE & Menuiserie | Annonay, Ardèche (07)</title>
+    <title>GCB – Plâtrerie, Isolation RGE &amp; Menuiserie | Annonay, Ardèche (07)</title>
     <meta name="description" content="GCB, artisan certifié RGE depuis 15 ans à Annonay (07). Spécialiste en plâtrerie, isolation thermique et menuiserie. Devis gratuit sous 48h. Intervention en Auvergne-Rhône-Alpes." />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="GCB" />
     <link rel="canonical" href="https://sarl-gcb.netlify.app/" />
 
-    <!-- Open Graph (Facebook, LinkedIn…) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sarl-gcb.netlify.app/" />
     <meta property="og:title" content="GCB – Plâtrerie, Isolation RGE & Menuiserie | Annonay (07)" />
@@ -20,22 +31,18 @@
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="GCB Bâtiment" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="GCB – Plâtrerie, Isolation RGE & Menuiserie | Annonay (07)" />
     <meta name="twitter:description" content="Artisan certifié RGE depuis 15 ans à Annonay. Plâtrerie, isolation thermique, menuiserie. Devis gratuit sous 48h." />
     <meta name="twitter:image" content="https://sarl-gcb.netlify.app/og-image.jpg" />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- Preload image hero (LCP) -->
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1768839725085-829e6ac7ac26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" />
 
-    <!-- Données structurées JSON-LD -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" is:inline>
     {
       "@context": "https://schema.org",
       "@graph": [
@@ -102,8 +109,6 @@
       ]
     }
     </script>
-
-    <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
   </head>
 
   <body>
@@ -113,7 +118,18 @@
         <p>Artisan certifié RGE à Annonay, Ardèche. Contactez-nous au 06 74 38 52 39 ou par email : contact@gcb-batiment.fr</p>
       </div>
     </noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="min-h-screen bg-[#0a0a0a]">
+      <Navbar client:load />
+      <main>
+        <Hero client:load />
+        <Services client:visible />
+        <About client:visible />
+        <Gallery client:visible />
+        <Trust client:visible />
+        <Zone client:visible />
+        <Contact client:visible />
+      </main>
+      <Footer client:visible />
+    </div>
   </body>
 </html>
