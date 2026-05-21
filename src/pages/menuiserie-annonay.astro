@@ -1,0 +1,154 @@
+---
+import '@/styles/index.css'
+import { Navbar } from '@/app/components/Navbar'
+import { Footer } from '@/app/components/Footer'
+
+const services = [
+  { title: 'Portes & Portails', desc: 'Portes d\'entrée blindées, portes de service, portails battants et coulissants. Matériaux : PVC, aluminium, bois, acier.' },
+  { title: 'Fenêtres & Coulissants', desc: 'Fenêtres double et triple vitrage, fenêtres de toit, coulissants aluminium. Réduction significative de la facture de chauffage.' },
+  { title: 'Baies Vitrées', desc: 'Baies coulissantes, galandages, baies levantes. Ouverture maximale sur l\'extérieur avec une isolation optimale.' },
+  { title: 'Volets Roulants', desc: 'Volets roulants motorisés, électriques ou solaires. Compatible domotique. Sécurité et isolation renforcées.' },
+  { title: 'Portes de Garage', desc: 'Portes basculantes, sectionnelles, enroulables. Automatisation et télécommande incluses sur demande.' },
+  { title: 'Pergolas & Vérandas', desc: 'Pergolas bioclimatiques aluminium, vérandas aluminium ou PVC. Extension de votre surface de vie.' },
+]
+
+const faq = [
+  { q: 'Quel est le prix d\'une pose de fenêtres à Annonay ?', a: 'Le coût dépend des dimensions, du matériau (PVC, aluminium, bois) et du type de vitrage. Comptez entre 400 € et 1 500 € par fenêtre posée. GCB vous établit un devis gratuit et sans engagement sous 48h.' },
+  { q: 'Quelles aides financières pour remplacer mes fenêtres ?', a: 'Plusieurs aides existent : MaPrimeRénov\', les CEE (Certificats d\'Économies d\'Énergie), l\'éco-PTZ et une TVA réduite à 5,5 % sur les travaux de rénovation énergétique. En tant qu\'artisan certifié RGE, GCB vous permet d\'accéder à toutes ces aides.' },
+  { q: 'Combien de temps dure la pose de fenêtres ?', a: 'Pour un logement standard (6 à 8 fenêtres), comptez 1 à 2 jours de travail. GCB organise le chantier pour minimiser les nuisances et laisse votre logement propre en fin de journée.' },
+  { q: 'Proposez-vous la motorisation des volets roulants existants ?', a: 'Oui. Nous pouvons motoriser vos volets roulants existants ou installer de nouveaux volets motorisés. Compatible avec la plupart des systèmes domotiques (Somfy, Nice, Bubendorff).' },
+  { q: 'Intervenez-vous pour la menuiserie en construction neuve ?', a: 'Absolument. GCB travaille aussi bien en rénovation qu\'en construction neuve, pour les particuliers comme pour les professionnels (promoteurs, architectes).' },
+]
+
+const cities = ['Annonay (07100)', 'Davézieux', 'Saint-Clair', 'Serrières', 'Boulieu-lès-Annonay', 'Roiffieux', 'Tournon-sur-Rhône', 'Valence (26)', 'Saint-Étienne (42)', 'Vienne (38)', 'Lyon (69)', 'Privas (07)']
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menuiserie Annonay (07) – Portes, Fenêtres &amp; Volets | GCB</title>
+    <meta name="description" content="Menuisier à Annonay, Ardèche. GCB installe et remplace portes, fenêtres PVC/alu/bois, baies vitrées et volets roulants. Artisan RGE. Devis gratuit sous 48h." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sarl-gcb.netlify.app/menuiserie-annonay" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarl-gcb.netlify.app/menuiserie-annonay" />
+    <meta property="og:title" content="Menuiserie Annonay (07) – Portes, Fenêtres & Volets | GCB" />
+    <meta property="og:description" content="Menuisier à Annonay, Ardèche. Portes, fenêtres, baies vitrées, volets roulants. Artisan RGE. Devis gratuit sous 48h." />
+    <meta property="og:image" content="https://sarl-gcb.netlify.app/og-image.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="GCB Bâtiment" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Menuiserie à Annonay",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "GCB",
+        "telephone": "+33674385239",
+        "address": { "@type": "PostalAddress", "addressLocality": "Annonay", "addressRegion": "Ardèche", "postalCode": "07100", "addressCountry": "FR" }
+      },
+      "areaServed": "Annonay, Ardèche, Auvergne-Rhône-Alpes",
+      "description": "Installation et remplacement de menuiseries extérieures et intérieures à Annonay : portes, fenêtres PVC/alu/bois, baies vitrées, volets roulants."
+    }
+    </script>
+  </head>
+  <body class="bg-[#0a0a0a]">
+    <Navbar client:load />
+    <main>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-28 pb-2">
+        <nav aria-label="breadcrumb" class="text-sm text-white/50" style="font-family: var(--font-body)">
+          <a href="/" class="hover:text-white transition-colors">Accueil</a>
+          <span class="mx-2">/</span>
+          <span class="text-white">Menuiserie Annonay</span>
+        </nav>
+      </div>
+
+      <section class="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="inline-block px-4 py-2 bg-[#6366f1]/10 border border-[#6366f1]/20 rounded-full mb-6">
+            <span class="text-[#6366f1] text-sm font-semibold" style="font-family: var(--font-body)">MENUISERIE – ANNONAY (07)</span>
+          </div>
+          <h1 class="text-5xl md:text-6xl text-white mb-6 leading-tight" style="font-family: var(--font-display)">
+            MENUISERIE À ANNONAY<br />PORTES, FENÊTRES & VOLETS
+          </h1>
+          <p class="text-xl text-white/70 mb-10 max-w-3xl leading-relaxed" style="font-family: var(--font-body)">
+            Artisan menuisier certifié RGE depuis plus de 15 ans à Annonay, <strong class="text-white">GCB</strong> installe et remplace toutes vos menuiseries extérieures et intérieures. Intervention dans un rayon de 100 km autour d'Annonay, dans toute l'Ardèche et la région Auvergne-Rhône-Alpes.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/#contact" class="px-8 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold flex items-center justify-center" style="font-family: var(--font-body)">
+              Demander un devis gratuit
+            </a>
+            <a href="tel:+33674385239" class="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors flex items-center justify-center" style="font-family: var(--font-body)">
+              06 74 38 52 39
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-4" style="font-family: var(--font-display)">NOS PRESTATIONS EN MENUISERIE</h2>
+          <p class="text-white/60 mb-14 max-w-2xl" style="font-family: var(--font-body)">Toutes nos menuiseries sont sélectionnées parmi les gammes premium du marché, avec pose garantie décennale.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map(s => (
+              <div class="p-8 bg-[#1a1a1a] border border-white/5 rounded-2xl hover:border-[#6366f1]/30 transition-colors">
+                <h3 class="text-xl text-white mb-3" style="font-family: var(--font-display)">{s.title}</h3>
+                <p class="text-white/60 leading-relaxed" style="font-family: var(--font-body)">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">ZONE D'INTERVENTION</h2>
+          <p class="text-white/70 mb-10 max-w-3xl text-lg leading-relaxed" style="font-family: var(--font-body)">
+            GCB intervient pour tous vos travaux de menuiserie à <strong class="text-white">Annonay</strong> et dans un rayon de <strong class="text-white">100 km</strong>, couvrant notamment :
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            {cities.map(city => (
+              <div class="px-4 py-3 bg-[#0a0a0a] border border-white/5 rounded-lg text-white/70 text-sm text-center" style="font-family: var(--font-body)">{city}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-14" style="font-family: var(--font-display)">QUESTIONS FRÉQUENTES – MENUISERIE ANNONAY</h2>
+          <div class="space-y-3 max-w-4xl">
+            {faq.map(f => (
+              <details class="bg-[#1a1a1a] border border-white/5 rounded-xl overflow-hidden">
+                <summary class="px-8 py-5 text-white font-semibold cursor-pointer list-none flex items-center justify-between hover:bg-white/5 transition-colors" style="font-family: var(--font-body)">
+                  {f.q}
+                  <span class="text-[#6366f1] ml-4 text-xl flex-shrink-0">+</span>
+                </summary>
+                <div class="px-8 py-5 text-white/70 leading-relaxed border-t border-white/5" style="font-family: var(--font-body)">{f.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-gradient-to-br from-[#6366f1]/10 to-[#0a0a0a] border-t border-[#6366f1]/20">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">DEVIS MENUISERIE GRATUIT À ANNONAY</h2>
+          <p class="text-white/60 mb-10 max-w-2xl mx-auto text-lg" style="font-family: var(--font-body)">Réponse sous 48h · Intervention à Annonay et alentours · Sans engagement</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/#contact" class="px-10 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold text-lg" style="font-family: var(--font-body)">Formulaire de contact</a>
+            <a href="tel:+33674385239" class="px-10 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors text-lg" style="font-family: var(--font-body)">06 74 38 52 39</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <Footer client:visible />
+  </body>
+</html>

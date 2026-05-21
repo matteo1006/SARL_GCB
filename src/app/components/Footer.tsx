@@ -68,13 +68,13 @@ export function Footer() {
             <h3 className="text-white text-lg mb-6" style={{ fontFamily: 'var(--font-display)' }}>
               SERVICES
             </h3>
-            <ul className="space-y-3 text-white/60" style={{ fontFamily: 'var(--font-body)' }}>
-              <li>Plâtrerie & Cloisons</li>
-              <li>Isolation RGE</li>
-              <li>Menuiserie</li>
-              <li>Aménagement intérieur</li>
-              <li>Terrasse & Pergola</li>
-              <li>Neuf & Rénovation</li>
+            <ul className="space-y-3" style={{ fontFamily: 'var(--font-body)' }}>
+              <li><a href="/platerie-annonay" className="text-white/60 hover:text-white transition-colors">Plâtrerie & Cloisons</a></li>
+              <li><a href="/isolation-thermique-annonay" className="text-white/60 hover:text-white transition-colors">Isolation RGE</a></li>
+              <li><a href="/menuiserie-annonay" className="text-white/60 hover:text-white transition-colors">Menuiserie</a></li>
+              <li className="text-white/60">Aménagement intérieur</li>
+              <li className="text-white/60">Terrasse & Pergola</li>
+              <li><a href="/renovation-annonay" className="text-white/60 hover:text-white transition-colors">Neuf & Rénovation</a></li>
             </ul>
           </div>
 

@@ -1,0 +1,176 @@
+---
+import '@/styles/index.css'
+import { Navbar } from '@/app/components/Navbar'
+import { Footer } from '@/app/components/Footer'
+
+const services = [
+  { title: 'Isolation des Combles', desc: 'Combles perdus par soufflage, combles aménagés par panneaux. Gain de 30% sur la facture de chauffage. Éligible MaPrimeRénov\'.' },
+  { title: 'Isolation des Murs par l\'Intérieur (ITI)', desc: 'Doublage thermique intérieur avec laine de roche, laine de verre ou mousse polyuréthane. Amélioration immédiate du confort.' },
+  { title: 'Isolation Thermique par l\'Extérieur (ITE)', desc: 'Système complet d\'ITE avec enduit de finition. Suppression des ponts thermiques, façade rénovée et isolée en une seule opération.' },
+  { title: 'Isolation des Planchers Bas', desc: 'Isolation du sol entre le vide sanitaire et le plancher habité. Réduction des déperditions par le sol jusqu\'à 10 %.' },
+  { title: 'Isolation Phonique', desc: 'Solutions d\'isolation acoustique pour murs mitoyens, plafonds entre étages et sols. Confort sonore garanti.' },
+  { title: 'Audit & Conseil Énergétique', desc: 'Étude de votre logement, recommandations prioritaires et aide au montage des dossiers d\'aides financières (MaPrimeRénov\', CEE).' },
+]
+
+const aides = [
+  { name: 'MaPrimeRénov\'', desc: 'Jusqu\'à 75 % des travaux pris en charge selon les revenus et le gain énergétique.' },
+  { name: 'CEE', desc: 'Certificats d\'Économies d\'Énergie versés par les fournisseurs d\'énergie. Cumulable avec MaPrimeRénov\'.' },
+  { name: 'Éco-PTZ', desc: 'Prêt à taux zéro jusqu\'à 50 000 € pour financer les travaux de rénovation énergétique.' },
+  { name: 'TVA à 5,5 %', desc: 'TVA réduite sur les travaux d\'amélioration énergétique (au lieu de 20 %).' },
+]
+
+const faq = [
+  { q: 'Qu\'est-ce que la certification RGE et pourquoi est-elle importante ?', a: 'RGE signifie « Reconnu Garant de l\'Environnement ». Cette certification est obligatoire pour que vos travaux d\'isolation soient éligibles aux aides de l\'État (MaPrimeRénov\', CEE, éco-PTZ). GCB est certifié RGE, vous garantissant l\'accès à toutes ces aides.' },
+  { q: 'Combien peut-on économiser avec une bonne isolation à Annonay ?', a: 'Une isolation complète (combles + murs) peut réduire votre facture de chauffage de 25 à 40 %. Dans une maison de 100 m² mal isolée, les économies peuvent atteindre 600 à 1 200 € par an.' },
+  { q: 'Quelle est la durée des travaux d\'isolation des combles ?', a: 'L\'isolation des combles perdus par soufflage se réalise en une demi-journée. Pour des combles aménagés ou l\'isolation des murs, comptez 2 à 5 jours selon la superficie.' },
+  { q: 'Peut-on bénéficier des aides même en maison récente ?', a: 'Les aides s\'appliquent aux logements de plus de 2 ans. L\'éligibilité dépend des matériaux, de la performance atteinte et des revenus du foyer. GCB vous accompagne dans le montage de votre dossier.' },
+  { q: 'Intervenez-vous en isolation en Ardèche et dans les départements voisins ?', a: 'Oui. GCB intervient à Annonay et dans un rayon de 100 km, couvrant l\'Ardèche (07), la Drôme (26), la Loire (42), l\'Isère (38) et le Rhône (69).' },
+]
+
+const cities = ['Annonay (07100)', 'Davézieux', 'Saint-Clair', 'Serrières', 'Boulieu-lès-Annonay', 'Roiffieux', 'Tournon-sur-Rhône', 'Valence (26)', 'Saint-Étienne (42)', 'Vienne (38)', 'Lyon (69)', 'Privas (07)']
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isolation Thermique RGE Annonay (07) – MaPrimeRénov' | GCB</title>
+    <meta name="description" content="Artisan RGE à Annonay pour isolation des combles, murs et planchers. Éligible MaPrimeRénov', CEE, éco-PTZ. Devis gratuit sous 48h en Ardèche." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sarl-gcb.netlify.app/isolation-thermique-annonay" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarl-gcb.netlify.app/isolation-thermique-annonay" />
+    <meta property="og:title" content="Isolation Thermique RGE Annonay (07) – MaPrimeRénov' | GCB" />
+    <meta property="og:description" content="Artisan RGE à Annonay. Isolation combles, murs, planchers. Éligible MaPrimeRénov'. Devis gratuit sous 48h." />
+    <meta property="og:image" content="https://sarl-gcb.netlify.app/og-image.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="GCB Bâtiment" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Isolation Thermique RGE à Annonay",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "GCB",
+        "telephone": "+33674385239",
+        "address": { "@type": "PostalAddress", "addressLocality": "Annonay", "addressRegion": "Ardèche", "postalCode": "07100", "addressCountry": "FR" }
+      },
+      "areaServed": "Annonay, Ardèche, Auvergne-Rhône-Alpes",
+      "description": "Isolation thermique des combles, murs (ITI/ITE) et planchers par artisan certifié RGE à Annonay."
+    }
+    </script>
+  </head>
+  <body class="bg-[#0a0a0a]">
+    <Navbar client:load />
+    <main>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-28 pb-2">
+        <nav aria-label="breadcrumb" class="text-sm text-white/50" style="font-family: var(--font-body)">
+          <a href="/" class="hover:text-white transition-colors">Accueil</a>
+          <span class="mx-2">/</span>
+          <span class="text-white">Isolation Thermique Annonay</span>
+        </nav>
+      </div>
+
+      <section class="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="inline-block px-4 py-2 bg-[#6366f1]/10 border border-[#6366f1]/20 rounded-full mb-6">
+            <span class="text-[#6366f1] text-sm font-semibold" style="font-family: var(--font-body)">ISOLATION RGE – ANNONAY (07)</span>
+          </div>
+          <h1 class="text-5xl md:text-6xl text-white mb-6 leading-tight" style="font-family: var(--font-display)">
+            ISOLATION THERMIQUE À ANNONAY<br />ARTISAN CERTIFIÉ RGE
+          </h1>
+          <p class="text-xl text-white/70 mb-10 max-w-3xl leading-relaxed" style="font-family: var(--font-body)">
+            Certifié <strong class="text-white">RGE (Reconnu Garant de l'Environnement)</strong> depuis plus de 15 ans, <strong class="text-white">GCB</strong> réalise tous vos travaux d'isolation thermique à Annonay et dans l'Ardèche. Combles, murs, planchers — nous vous accompagnons aussi dans le montage des aides financières (MaPrimeRénov', CEE, éco-PTZ).
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/#contact" class="px-8 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold flex items-center justify-center" style="font-family: var(--font-body)">
+              Demander un devis gratuit
+            </a>
+            <a href="tel:+33674385239" class="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors flex items-center justify-center" style="font-family: var(--font-body)">
+              06 74 38 52 39
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-4" style="font-family: var(--font-display)">NOS PRESTATIONS EN ISOLATION</h2>
+          <p class="text-white/60 mb-14 max-w-2xl" style="font-family: var(--font-body)">Chaque solution est adaptée à votre logement et calibrée pour maximiser votre gain énergétique.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map(s => (
+              <div class="p-8 bg-[#1a1a1a] border border-white/5 rounded-2xl hover:border-[#6366f1]/30 transition-colors">
+                <h3 class="text-xl text-white mb-3" style="font-family: var(--font-display)">{s.title}</h3>
+                <p class="text-white/60 leading-relaxed" style="font-family: var(--font-body)">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-4" style="font-family: var(--font-display)">AIDES FINANCIÈRES DISPONIBLES</h2>
+          <p class="text-white/60 mb-14 max-w-2xl" style="font-family: var(--font-body)">En tant qu'artisan certifié RGE, GCB vous permet d'accéder à toutes les aides de l'État pour financer votre isolation.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {aides.map(a => (
+              <div class="p-6 bg-[#0a0a0a] border border-[#6366f1]/20 rounded-xl text-center">
+                <h3 class="text-lg text-[#6366f1] mb-3 font-semibold" style="font-family: var(--font-display)">{a.name}</h3>
+                <p class="text-white/60 text-sm leading-relaxed" style="font-family: var(--font-body)">{a.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">ZONE D'INTERVENTION</h2>
+          <p class="text-white/70 mb-10 max-w-3xl text-lg leading-relaxed" style="font-family: var(--font-body)">
+            GCB intervient pour tous vos travaux d'isolation à <strong class="text-white">Annonay</strong> et dans un rayon de <strong class="text-white">100 km</strong>, couvrant notamment :
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            {cities.map(city => (
+              <div class="px-4 py-3 bg-[#1a1a1a] border border-white/5 rounded-lg text-white/70 text-sm text-center" style="font-family: var(--font-body)">{city}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-14" style="font-family: var(--font-display)">QUESTIONS FRÉQUENTES – ISOLATION ANNONAY</h2>
+          <div class="space-y-3 max-w-4xl">
+            {faq.map(f => (
+              <details class="bg-[#0a0a0a] border border-white/5 rounded-xl overflow-hidden">
+                <summary class="px-8 py-5 text-white font-semibold cursor-pointer list-none flex items-center justify-between hover:bg-white/5 transition-colors" style="font-family: var(--font-body)">
+                  {f.q}
+                  <span class="text-[#6366f1] ml-4 text-xl flex-shrink-0">+</span>
+                </summary>
+                <div class="px-8 py-5 text-white/70 leading-relaxed border-t border-white/5" style="font-family: var(--font-body)">{f.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-gradient-to-br from-[#6366f1]/10 to-[#0a0a0a] border-t border-[#6366f1]/20">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">DEVIS ISOLATION GRATUIT À ANNONAY</h2>
+          <p class="text-white/60 mb-10 max-w-2xl mx-auto text-lg" style="font-family: var(--font-body)">Réponse sous 48h · Artisan RGE · Aide au montage des dossiers d'aides · Sans engagement</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/#contact" class="px-10 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold text-lg" style="font-family: var(--font-body)">Formulaire de contact</a>
+            <a href="tel:+33674385239" class="px-10 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors text-lg" style="font-family: var(--font-body)">06 74 38 52 39</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <Footer client:visible />
+  </body>
+</html>

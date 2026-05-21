@@ -1,0 +1,154 @@
+---
+import '@/styles/index.css'
+import { Navbar } from '@/app/components/Navbar'
+import { Footer } from '@/app/components/Footer'
+
+const services = [
+  { title: 'Cloisons de Distribution', desc: 'Création et déplacement de cloisons en placo plâtre BA13, BA18 phonique. Redistribution des espaces intérieurs à la carte.' },
+  { title: 'Doublage des Murs', desc: 'Doublage thermique et phonique par l\'intérieur avec laine de verre, laine de roche ou panneaux isolants. Finition peinture ou carrelage.' },
+  { title: 'Faux Plafonds', desc: 'Faux plafonds suspendus en dalles, plaques BA13, placo phonique. Intégration éclairage LED et VMC sur demande.' },
+  { title: 'Enduits & Finitions', desc: 'Enduits de lissage, ragréage, rebouchage. Préparation des supports avant peinture ou papier peint. Finitions impeccables.' },
+  { title: 'Habillage Structural', desc: 'Habillage de poutres, piliers et colonnes en placo. Intégration de conduits et gaines techniques.' },
+  { title: 'Isolation Acoustique', desc: 'Solutions d\'isolation phonique renforcée pour murs, sols et plafonds. Idéal pour studios, bureaux, logements mitoyens.' },
+]
+
+const faq = [
+  { q: 'Combien coûte la pose de cloisons à Annonay ?', a: 'Le prix dépend de la surface et du type de cloison. Comptez entre 50 € et 150 € par m² posé (fourniture et main-d\'œuvre). GCB vous établit un devis gratuit et précis après visite.' },
+  { q: 'Quelle épaisseur de placo choisir pour l\'isolation phonique ?', a: 'Pour une isolation phonique efficace, nous recommandons les plaques BA18 phonique, voire des solutions multicouches avec laine minérale intégrée. L\'épaisseur totale varie de 10 à 15 cm.' },
+  { q: 'Le placo peut-il se poser sur n\'importe quel support ?', a: 'Oui. Le placo s\'adapte aux murs en parpaing, brique, béton ou bois. Nous préparons systématiquement les supports avant pose pour garantir l\'adhérence et la durabilité.' },
+  { q: 'Combien de temps pour rénover une pièce complète en placo ?', a: 'Pour une pièce de 20 à 30 m², comptez 2 à 3 jours de travail en incluant les cloisons, le faux plafond et les finitions d\'enduit.' },
+  { q: 'GCB fait-il aussi le carrelage ou la peinture après le placo ?', a: 'GCB se concentre sur les travaux de second œuvre (plâtrerie, isolation, menuiserie). Pour la peinture et le carrelage, nous pouvons vous recommander des partenaires locaux à Annonay.' },
+]
+
+const cities = ['Annonay (07100)', 'Davézieux', 'Saint-Clair', 'Serrières', 'Boulieu-lès-Annonay', 'Roiffieux', 'Tournon-sur-Rhône', 'Valence (26)', 'Saint-Étienne (42)', 'Vienne (38)', 'Lyon (69)', 'Privas (07)']
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plâtrerie &amp; Pose Placo Annonay (07) – Cloisons, Faux Plafonds | GCB</title>
+    <meta name="description" content="Plâtrier à Annonay, Ardèche. GCB réalise cloisons placo, doublage, faux plafonds et enduits de finition. Artisan qualifié. Devis gratuit sous 48h." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sarl-gcb.netlify.app/platerie-annonay" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarl-gcb.netlify.app/platerie-annonay" />
+    <meta property="og:title" content="Plâtrerie & Pose Placo Annonay (07) – Cloisons, Faux Plafonds | GCB" />
+    <meta property="og:description" content="Plâtrier à Annonay. Cloisons, doublage, faux plafonds, enduits. Devis gratuit sous 48h." />
+    <meta property="og:image" content="https://sarl-gcb.netlify.app/og-image.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="GCB Bâtiment" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Plâtrerie et pose de placo à Annonay",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "GCB",
+        "telephone": "+33674385239",
+        "address": { "@type": "PostalAddress", "addressLocality": "Annonay", "addressRegion": "Ardèche", "postalCode": "07100", "addressCountry": "FR" }
+      },
+      "areaServed": "Annonay, Ardèche, Auvergne-Rhône-Alpes",
+      "description": "Pose de cloisons, doublage, faux plafonds et enduits de finition à Annonay et dans l'Ardèche."
+    }
+    </script>
+  </head>
+  <body class="bg-[#0a0a0a]">
+    <Navbar client:load />
+    <main>
+
+      <div class="max-w-[1400px] mx-auto px-6 lg:px-12 pt-28 pb-2">
+        <nav aria-label="breadcrumb" class="text-sm text-white/50" style="font-family: var(--font-body)">
+          <a href="/" class="hover:text-white transition-colors">Accueil</a>
+          <span class="mx-2">/</span>
+          <span class="text-white">Plâtrerie Annonay</span>
+        </nav>
+      </div>
+
+      <section class="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <div class="inline-block px-4 py-2 bg-[#6366f1]/10 border border-[#6366f1]/20 rounded-full mb-6">
+            <span class="text-[#6366f1] text-sm font-semibold" style="font-family: var(--font-body)">PLÂTRERIE – ANNONAY (07)</span>
+          </div>
+          <h1 class="text-5xl md:text-6xl text-white mb-6 leading-tight" style="font-family: var(--font-display)">
+            PLÂTRERIE & POSE DE PLACO<br />À ANNONAY
+          </h1>
+          <p class="text-xl text-white/70 mb-10 max-w-3xl leading-relaxed" style="font-family: var(--font-body)">
+            Plâtrier-plaquiste qualifié à Annonay depuis plus de 15 ans, <strong class="text-white">GCB</strong> réalise tous vos travaux de cloisons, doublage, faux plafonds et finitions. Travail soigné, délais tenus, finitions impeccables pour particuliers et professionnels en Ardèche.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/#contact" class="px-8 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold flex items-center justify-center" style="font-family: var(--font-body)">
+              Demander un devis gratuit
+            </a>
+            <a href="tel:+33674385239" class="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors flex items-center justify-center" style="font-family: var(--font-body)">
+              06 74 38 52 39
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-4" style="font-family: var(--font-display)">NOS PRESTATIONS EN PLÂTRERIE</h2>
+          <p class="text-white/60 mb-14 max-w-2xl" style="font-family: var(--font-body)">Du gros œuvre aux finitions, GCB prend en charge l'intégralité de vos travaux de second œuvre.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map(s => (
+              <div class="p-8 bg-[#1a1a1a] border border-white/5 rounded-2xl hover:border-[#6366f1]/30 transition-colors">
+                <h3 class="text-xl text-white mb-3" style="font-family: var(--font-display)">{s.title}</h3>
+                <p class="text-white/60 leading-relaxed" style="font-family: var(--font-body)">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#1a1a1a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">ZONE D'INTERVENTION</h2>
+          <p class="text-white/70 mb-10 max-w-3xl text-lg leading-relaxed" style="font-family: var(--font-body)">
+            GCB intervient pour tous vos travaux de plâtrerie à <strong class="text-white">Annonay</strong> et dans un rayon de <strong class="text-white">100 km</strong>, couvrant notamment :
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            {cities.map(city => (
+              <div class="px-4 py-3 bg-[#0a0a0a] border border-white/5 rounded-lg text-white/70 text-sm text-center" style="font-family: var(--font-body)">{city}</div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+          <h2 class="text-4xl md:text-5xl text-white mb-14" style="font-family: var(--font-display)">QUESTIONS FRÉQUENTES – PLÂTRERIE ANNONAY</h2>
+          <div class="space-y-3 max-w-4xl">
+            {faq.map(f => (
+              <details class="bg-[#1a1a1a] border border-white/5 rounded-xl overflow-hidden">
+                <summary class="px-8 py-5 text-white font-semibold cursor-pointer list-none flex items-center justify-between hover:bg-white/5 transition-colors" style="font-family: var(--font-body)">
+                  {f.q}
+                  <span class="text-[#6366f1] ml-4 text-xl flex-shrink-0">+</span>
+                </summary>
+                <div class="px-8 py-5 text-white/70 leading-relaxed border-t border-white/5" style="font-family: var(--font-body)">{f.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 bg-gradient-to-br from-[#6366f1]/10 to-[#0a0a0a] border-t border-[#6366f1]/20">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+          <h2 class="text-4xl md:text-5xl text-white mb-6" style="font-family: var(--font-display)">DEVIS PLÂTRERIE GRATUIT À ANNONAY</h2>
+          <p class="text-white/60 mb-10 max-w-2xl mx-auto text-lg" style="font-family: var(--font-body)">Réponse sous 48h · Intervention à Annonay et alentours · Sans engagement</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/#contact" class="px-10 py-4 bg-[#6366f1] text-white rounded-lg hover:bg-[#5558e3] transition-colors font-semibold text-lg" style="font-family: var(--font-body)">Formulaire de contact</a>
+            <a href="tel:+33674385239" class="px-10 py-4 bg-white/10 text-white border border-white/20 rounded-lg hover:bg-white/20 transition-colors text-lg" style="font-family: var(--font-body)">06 74 38 52 39</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <Footer client:visible />
+  </body>
+</html>
