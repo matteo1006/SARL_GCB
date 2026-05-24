@@ -1,11 +1,16 @@
+# SARL GCB – Plaquiste & Installation de Menuiseries | Annonay (07)
 
-  # Site vitrine entreprise BTP
+Site vitrine de la SARL GCB, artisan plaquiste et menuisier à Annonay, Ardèche.
 
-  This is a code bundle for Site vitrine entreprise BTP. The original project is available at https://www.figma.com/design/8qTB1ROINDCptJeAWxRunS/Site-vitrine-entreprise-BTP.
+## Développement
 
-  ## Running the code
+```bash
+npm install
+npm run dev
+```
 
-  Run `npm i` to install the dependencies.
+## Build
 
-  Run `npm run dev` to start the development server.
-  
+```bash
+npm run build
+```
