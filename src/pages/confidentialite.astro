@@ -1,0 +1,103 @@
+---
+import '@/styles/index.css'
+import { Navbar } from '@/app/components/Navbar'
+import { Footer } from '@/app/components/Footer'
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Politique de confidentialité | GCB Annonay</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://gcb-annonay.fr/confidentialite" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body class="bg-[#0a0a0a]">
+    <Navbar client:load />
+    <main class="max-w-[900px] mx-auto px-6 lg:px-12 pt-32 pb-20">
+
+      <h1 class="text-4xl md:text-5xl text-white mb-12" style="font-family: var(--font-display)">POLITIQUE DE CONFIDENTIALITÉ</h1>
+
+      <div class="space-y-10 text-white/70 leading-relaxed" style="font-family: var(--font-body)">
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">1. Responsable du traitement</h2>
+          <p>
+            La SARL GCB, dont le siège social est situé à Annonay (07100), est responsable du traitement des données personnelles collectées via ce site.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">2. Données collectées</h2>
+          <p>
+            Dans le cadre de l'utilisation du formulaire de contact, les données suivantes peuvent être collectées :
+          </p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Nom et prénom</li>
+            <li>Adresse email</li>
+            <li>Numéro de téléphone</li>
+            <li>Description du projet ou message</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">3. Finalité du traitement</h2>
+          <p>
+            Les données collectées sont utilisées exclusivement pour répondre à vos demandes de devis et de contact. Elles ne font l'objet d'aucune cession à des tiers.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">4. Base légale</h2>
+          <p>
+            Le traitement est fondé sur votre consentement, exprimé lors de l'envoi du formulaire de contact (article 6.1.a du RGPD).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">5. Durée de conservation</h2>
+          <p>
+            Vos données sont conservées pendant la durée nécessaire au traitement de votre demande, et au maximum 3 ans à compter du dernier contact.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">6. Vos droits</h2>
+          <p>
+            Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :
+          </p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Droit d'accès</li>
+            <li>Droit de rectification</li>
+            <li>Droit à l'effacement</li>
+            <li>Droit à la limitation du traitement</li>
+            <li>Droit d'opposition</li>
+          </ul>
+          <p class="mt-4">
+            Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@gcb-batiment.fr" class="text-[#6366f1] hover:underline">contact@gcb-batiment.fr</a>
+          </p>
+          <p class="mt-3">
+            Vous disposez également du droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" class="text-[#6366f1] hover:underline" target="_blank" rel="noopener">www.cnil.fr</a>).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-xl text-white mb-4" style="font-family: var(--font-display)">7. Cookies</h2>
+          <p>
+            Ce site n'utilise pas de cookies de suivi ou de traçage publicitaire. Aucun cookie tiers n'est déposé sur votre terminal.
+          </p>
+        </section>
+
+      </div>
+
+      <div class="mt-12">
+        <a href="/" class="text-[#6366f1] hover:underline text-sm" style="font-family: var(--font-body)">← Retour à l'accueil</a>
+      </div>
+
+    </main>
+    <Footer client:visible />
+  </body>
+</html>

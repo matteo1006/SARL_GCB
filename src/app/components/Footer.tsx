@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export function Footer() {
   const scrollToSection = (id: string) => {
@@ -19,26 +19,6 @@ export function Footer() {
             <p className="text-white/60 mb-6 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
               Votre artisan de confiance en Auvergne-Rhône-Alpes pour tous vos travaux de plâtrerie, isolation et menuiserie.
             </p>
-            <div className="flex gap-3">
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#6366f1]/20 border border-white/10 hover:border-[#6366f1]/40 rounded-lg flex items-center justify-center transition-all"
-              >
-                <Facebook className="w-5 h-5 text-white/60 hover:text-[#6366f1]" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#6366f1]/20 border border-white/10 hover:border-[#6366f1]/40 rounded-lg flex items-center justify-center transition-all"
-              >
-                <Instagram className="w-5 h-5 text-white/60 hover:text-[#6366f1]" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/5 hover:bg-[#6366f1]/20 border border-white/10 hover:border-[#6366f1]/40 rounded-lg flex items-center justify-center transition-all"
-              >
-                <Linkedin className="w-5 h-5 text-white/60 hover:text-[#6366f1]" />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -122,25 +102,18 @@ export function Footer() {
             </p>
             <div className="flex gap-6 text-sm">
               <a
-                href="#"
+                href="/mentions-legales"
                 className="text-white/50 hover:text-white transition-colors"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
                 Mentions légales
               </a>
               <a
-                href="#"
+                href="/confidentialite"
                 className="text-white/50 hover:text-white transition-colors"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
                 Politique de confidentialité
-              </a>
-              <a
-                href="#"
-                className="text-white/50 hover:text-white transition-colors"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                CGV
               </a>
             </div>
           </div>
